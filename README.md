@@ -19,4 +19,4 @@ Esse projeto foi desenvolvido para ser submetido ao 4º exercício solicitado du
 ```bash
 git clone https://github.com/imarialu/exercicio_4.git
 ```
-2. Após clonar, basta abrir os arquivos `.html` em seu navegador.
+2. Após clonar, basta abrir o arquivo `.html` em seu navegador.
