@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Signika+Negative:wght@300..700&display=swap');
+
+/* Variáveis */
+:root{
+    --azul: #5189b9;
+    --rosa: #f29bb2;
+    --roxo: #8774ad;
+    --corFundo: #F2EAE4;
+    --corSombra: ;
+}
+
+/* Reset */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Signika Negative';
+    background-color: var(--corFundo);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+/* Estilização da barra de navegação */
+.navbar{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    padding: 1rem 4rem;
+    margin-top: 2rem;
+    border-radius: 30px;
+    border: 1px solid black;
+    box-shadow: 0 4px ;
+    background-color: var(--rosa);
+}
+
+.links{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.links a{
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+}
+
+.links a:hover{
+    color: var(--roxo);
+    text-decoration: underline;
+}
+
+
+/* Estilização do texto e imagens do header */
+.container-header{
+    display: flex;
+    gap: 20rem;
+    margin-top: 13rem;
+    margin-bottom: 8rem;
+}
+
+.container-texto h1{
+    font-size: 3rem;
+    color: var(--rosa);
+}
+
+.container-texto p{
+    font-size: 1.5rem;
+    color: var(--rosa);
+}
+
+.redes{
+    display: flex;
+    margin-top: 1rem;
+    gap: 0.8rem;
+}
+
+.redes img{
+    width: 30px;
+}
+
+.container-img img{
+    width: 300px;
+}
+
+/* Estilização dos titulos - h1 */
+.titulo{
+    font-size: 1.5rem;
+    color: var(--rosa);
+}
+
+/* Estilização da section sobre mim */
+.sec-sobre{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#titulo-sobre{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.texto-sobre{
+    border: 2px solid var(--roxo);
+    text-align: center;
+    width: 500px;
+    padding: 3rem 3rem;
+    margin-bottom: 4rem;
+    box-shadow: 5px 5px var(--roxo);
+}
+
+/* Estilização da section conhecimentos */
+.container-con{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#titulo-con{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.elementos{
+    display: flex;
+    justify-content: center;
+}
+
+.elementos-grid{
+    list-style: none;
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(8, 1fr);
+    margin-bottom: 1rem;
+}
+
+.elementos p{
+    text-align: center;
+    width: 100px;
+    padding: 0.3rem;
+    border: 1px solid var(--roxo);
+    box-shadow: 3px 3px var(--roxo);
+}
+
+.elementos p:hover{
+    background-color: var(--roxo);
+    box-shadow: 3px 3px #000000;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+/* Estilização da section projetos */
+.container-projetos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo-pjs{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container-pjs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
+}
+
+.container-item{
+    border: 2px solid var(--roxo);
+    padding: 4rem;
+    margin-bottom: 5rem;
+    border-radius: 30px;
+    box-shadow: 8px 8px var(--roxo);
+}
+
+.container-item h3{
+    color: var(--rosa);
+}
+
+.container-item img{
+    width: 300px;
+    border: 2px solid var(--roxo);
+}
+
+/* Estilização da section de contato */
+.container-contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#titulo-ctt{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contato-item h2{
+    margin-bottom: 3rem;
+}
+
+.contato-item p{
+    margin-bottom: 5rem;
+}
+
+#exclamacao{
+    color: #F29BB2;
+}
+
+#email{
+    color: #F29BB2;
+    text-decoration: underline;
+}
+
+/* Estilização do footer */
+footer{
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: 600;
+    color: var(--rosa);
+    border-top: 2px solid var(--roxo);
+}
+
+/* Estilização da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--corFundo);
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 100px;
+    background-color: var(--rosa);
+}
+
+/* Responsividade */
+@media (max-width: 1400px){
+    .navbar{
+        width: 40%;
+    }
+
+    .container-header{
+        gap: 10rem;
+    }
+
+    .elementos-grid{
+        gap: 2rem;
+    }
+
+    #titulo-ctt{
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    .contato-item h2{
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 1050px){
+    .navbar{
+        width: 50%;
+    }
+
+    .container-header{
+        gap: 8rem;
+    }
+
+    .elementos-grid{
+        gap: 1rem;
+    }
+
+    .container-pjs{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    #titulo-ctt{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 844px){
+    .navbar{
+        display: none;
+    }
+
+    .container-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        gap: 5rem;
+    }
+
+    .container-texto{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container-texto h1{
+        font-size: 2.5rem;
+    }
+
+    .container-texto p{
+        font-size: 1.2rem;
+        color: var(--rosa);
+    }
+
+    .texto-sobre{
+        width: 200px;
+        padding: 2rem 2rem;
+        margin-bottom: 5rem;
+    }
+
+    .elementos-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .container-pjs{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    .container-item{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .container-item img{
+        width: 200px;
+    }
+
+    #titulo-ctt{
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    .contato-item h2{
+        margin-bottom: 2rem;
+    }
+}
